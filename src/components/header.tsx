@@ -1,6 +1,5 @@
 import Link from "next/link";
 import MobileNav from "@/components/mobile-nav";
-import ThemeToggle from "@/components/theme-toggle";
 
 export default function Header() {
   return (
@@ -8,10 +7,12 @@ export default function Header() {
       {/* Mobile Navbar */}
       <MobileNav />
       {/* Navbar */}
-      <nav className="bg-ctp-lavender-800 text-ctp-text shadow-base hidden p-6 shadow-md md:flex">
+      <nav className="bg-ctp-base text-ctp-text shadow-base hidden p-6 shadow-md md:flex">
         <div className="container mx-auto flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <h1 className="text-xl font-bold">foreynd</h1>
+            <h1 className="tex-xl font-bold tracking-wider uppercase">
+              Foreynd
+            </h1>
           </Link>
           <div className="flex items-center justify-center gap-4 font-medium">
             <Link
@@ -38,7 +39,6 @@ export default function Header() {
             >
               Blog
             </Link>
-            <ThemeToggle />
           </div>
         </div>
       </nav>
